@@ -5,7 +5,7 @@ import audioImg4 from './images/Rectangle 17.svg'
 import audioImg5 from './images/Rectangle 18.svg'
 import audioImg6 from './images/Rectangle 19.svg'
 import audioImg7 from './images/Rectangle 20.svg'
-import audioImg8 from './images/Lead-image.svg'
+
 
 export default function SectionContent(){
     const release = [

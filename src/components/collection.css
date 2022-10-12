@@ -1,0 +1,72 @@
+:root {
+  --border: rgba(239, 238, 224, 0.545);
+}
+
+.collection {
+  padding: var(--standard-padding);
+  border: 2px solid red;
+}
+.collection aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection aside button {
+  width: 48%;
+  border-radius: 30px;
+  padding: 10px 0;
+  font-size: 18px;
+  background: none;
+  border: none;
+}
+.collection aside :first-child {
+  background: var(--play-btn-bg);
+}
+.collection aside :last-child {
+  border: 1px solid var(--border);
+  color: var(--border);
+}
+.collection > div {
+  position: relative;
+  margin: 20px 0 50px;
+  height: 35vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.collection > div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collection > div .collection_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+  margin: 0 0 20px;
+}
+.collection > div .collection_item > div p {
+  margin: 5px 0 0;
+}
+.collection > div .collection_item > div .last {
+  margin: 20px 0 0;
+}
+.collection > div .play-container {
+  z-index: 3;
+  padding: 10px;
+  background: var(--play-btn-bg);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=collection.css.map */

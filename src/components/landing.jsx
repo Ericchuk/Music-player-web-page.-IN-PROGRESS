@@ -1,20 +1,21 @@
 import Header from "./header";
-import Section from "./section1";
-import SectionContent from "./section2";
-import SectionContent3 from "./section3";
 import LogSection from "./logSection";
-import './chart.css'
-import Chart from './chart'
+import Homepage from "./bodyForSection1";
+import './chart.css';
+import Chart from './chart';
+import Collection from './collection';
+import {Routes, Route, Link} from 'react-router-dom'
 
 export default function LandingPage(){
     return(
         <article>
             <Header />
-            <Section />
-            <SectionContent />
-            <SectionContent3 />
             {/* <LogSection /> */}
-            <Chart />
+            <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="chart" element={<Chart />} />
+            </Routes>
+            <Collection />
         </article>
     )
 }
